@@ -7,6 +7,7 @@
 // existe par
 function findPar2(arr1 : number []){
     let i : number = 0;
+    let find :boolean = false;
 
     while(!find && i<arr1.length){
     find = (arr[i] % 2 == 0)
@@ -16,10 +17,12 @@ function findPar2(arr1 : number []){
     }
 }
 
+
 //nombres por m
-function mNames(arrNames : string[]):Boolean
-{
+function mNames(arrNames : string[]):Boolean{
     let i : number = 0;
+    let noM : boolean = true;
+
 
     while(i < arrNames.length && noM == true){
         if(arrNames[i][0] === "m"){
